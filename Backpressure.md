@@ -136,3 +136,17 @@ Flux.create(emitter -> {
 ```
 ### Summary
 > Backpressure is essential for handling data flow in reactive systems where the producer may generate data faster than the consumer can process it. Project Reactor provides various strategies to manage backpressure, ensuring that your reactive streams remain responsive and resilient under different load conditions.
+
+## if not handling backpressure?
+>  if you do not provide a buffer or any backpressure strategy, and the consumer cannot keep up with the producer, data can be lost or the application may encounter an overflow error. By default, if a backpressure strategy is not specified, Project Reactor uses a limited internal buffer. If this buffer is exceeded, an overflow error is thrown, and data can be lost.
+
+### Possible Outcomes
+#### Data Loss:
+
+- Since there is no buffering and the consumer is slower than the producer, some items may be lost because the consumer cannot keep up with the rate at which items are being produced.
+#### Overflow Error:
+
+- If the internal buffer is exceeded, an overflow error may occur. This will result in the termination of the stream and possibly an error being logged or propagated.
+
+> To avoid data loss or overflow errors, it is recommended to always specify a backpressure strategy suitable for your application’s needs.
+> By specifying a backpressure strategy, you can control how your application handles situations where the producer is faster than the consumer, thus avoiding potential data loss or errors.
