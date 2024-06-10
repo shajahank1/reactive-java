@@ -1,4 +1,5 @@
 # Mono Methods
+> https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html
 ## Creation
 - Mono.just(T data): Create a Mono that emits the provided value.
 - Mono.empty(): Create a Mono that completes without emitting any item.
