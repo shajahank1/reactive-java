@@ -1,3 +1,6 @@
+> https://projectreactor.io/docs/core/3.6.6/reference/index.html
+> https://projectreactor.io/docs/core/3.6.6/api/index.html
+
 # Mono Methods
 > https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html
 > https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Mono.html
