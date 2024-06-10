@@ -1,4 +1,5 @@
 # flatmap vs concatmap
+> https://medium.com/@abugautam/project-reactor-flatmap-vs-concatmap-vs-flatmapsequential-dc74ca58829e
 ## flatMap
 > flatMap is used to transform each element emitted by a Flux or Mono into a Publisher, and then flatten these Publishers into a single Flux or Mono. The key characteristic of flatMap is that it processes the inner Publishers concurrently.
 
