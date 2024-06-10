@@ -1,4 +1,7 @@
 # flatMapMany
+
+> https://manish-dixit.medium.com/reactive-tools-map-flatmap-flatmapmany-subscribe-514460b4ccd9
+
 > flatMapMany is a powerful operator in Project Reactor that allows you to map each element of a Mono to a Publisher and then merge those resulting Publishers into a single Flux. This is particularly useful in scenarios where you need to handle asynchronous or non-blocking operations that return multiple values for each input element.
 
 ## Real-World Example: Processing User Orders
